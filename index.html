@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Básico 4</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- Crear dos inputs. Uno es elemento y otro posición. Los datos se irán introduciendo en un array.
+    Hay distintos botones: en añadir si posición está vacío, añadiremos el elemento con un push. Si posición tiene un número,
+meteremos el elemento en esa posición. El botón editar me permite cambiar el elemento de una posición. Si quiero editar y no hay ninguna
+posición marcada, informar al usuario de que eso no es posible.
+El botón borrar me permitirá borrar el elemento que esté en la posición que se indique.
+El botón buscar me permitirá consultar el elemento que está guardado en una determinada posición.
+El botón buscar índice me permitirá que cuando ponga un elemento, me devuelva la primera posición que guarda ese elemento.
+Controlar que en posición todo lo que se introduzca sean números. El elemento admite cualquier valor.
+Controlar que si añado un elemento en una posición que ya hay introducido algo, no se permita.
+Si busco en una posición que no hay ningún valor, que en vez de mostrar undefined muestre un alert de que aquí no hay ningún valor.
+ -->
+
+<label>Escriba elemento</label>
+<input type="text" id="elemento" name="elemento"> <br/> <br/>
+<label>Escriba posición</label>
+<input type="text" id="posicion" name="posicion"> <br/> <br/>
+
+<button type="button" onclick="aniadirElemento()">Añadir elemento</button>
+<button type="button" onclick="editarElemento()">Editar elemento</button>
+<button type="button" onclick="borrarElemento()">Borrar elemento</button>
+<button type="button" onclick="buscarElemento()">Buscar elemento</button>
+<button type="button" onclick="buscarIndice()">Buscar índice</button>
+<button type="button" onclick="mostrarArray()">Mostrar array</button>
+    
+</body>
+</html>
